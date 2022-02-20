@@ -14,7 +14,7 @@ function App() {
     <GithubProvider>
       <AlertProvider>
         <Router>
-          <div className="flex flex-col justify-between h-screen bg-gray-600">
+          <div className="flex flex-col justify-between min-h-screen bg-gray-600">
             <Navbar title='Github Finder'/>
 
             <main className='container mx-auto px-3 pb-12'>
