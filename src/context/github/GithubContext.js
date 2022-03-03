@@ -31,14 +31,15 @@ export const GithubProvider = ({children}) => {
 
     const response = await fetch(`${GITHUB_URL}/search/users?${params}`,
     // To include Token, we do that in the authorization header by passing a second argument into fetch
-        {
-            headers: {
-                Authorization: `token ${GITHUB_TOKEN}`
-            }
-        }
+        // {
+        //     headers: {
+        //         Authorization: `token ${GITHUB_TOKEN}`
+        //     }
+        // }
     )
 
     const {items} = await response.json()
+    console.log(items)
 
     dispatch({
         type: 'GET_USERS',
@@ -52,11 +53,11 @@ export const GithubProvider = ({children}) => {
 
     const response = await fetch(`${GITHUB_URL}/users/${login}`,
     // To include Token, we do that in the authorization header by passing a second argument into fetch
-        {
-            headers: {
-                Authorization: `token ${GITHUB_TOKEN}`
-            }
-        }
+        // {
+        //     headers: {
+        //         Authorization: `token ${GITHUB_TOKEN}`
+        //     }
+        // }
     )
 
     // If status response returns an error, if the search doesn't match anything
@@ -84,11 +85,11 @@ export const GithubProvider = ({children}) => {
 
     const response = await fetch(`${GITHUB_URL}/users/${login}/repos?${params}`,
     // To include Token, we do that in the authorization header by passing a second argument into fetch
-        {
-            headers: {
-                Authorization: `token ${GITHUB_TOKEN}`
-            }
-        }
+        // {
+        //     headers: {
+        //         Authorization: `token ${GITHUB_TOKEN}`
+        //     }
+        // }
     )
 
     const data = await response.json()
