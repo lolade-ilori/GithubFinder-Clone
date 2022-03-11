@@ -13,7 +13,7 @@ function About() {
         </a>{' '}
         Udemy course by
         <strong>
-          <a href='https://traversymedia.com' target='_blank'> Brad Traversy</a>
+          <a href='https://traversymedia.com' target='_blank' rel="noreferrer" > Brad Traversy</a>
         </strong>
         .
       </p>
@@ -22,7 +22,7 @@ function About() {
       </p>
       <p className='text-lg text-gray-400'>
         Layout By:
-        <a className='text-gray' href='https://twitter.com/hassibmoddasser' target='_blank'>
+        <a className='text-gray' href='https://twitter.com/hassibmoddasser' target='_blank' rel="noreferrer" >
           Hassib Moddasser
         </a>
       </p>
